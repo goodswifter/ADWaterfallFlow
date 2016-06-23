@@ -14,6 +14,11 @@
 		8A9E04EC1D1BB878004126FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E04EA1D1BB878004126FD /* Main.storyboard */; };
 		8A9E04EE1D1BB878004126FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E04ED1D1BB878004126FD /* Assets.xcassets */; };
 		8A9E04F11D1BB878004126FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E04EF1D1BB878004126FD /* LaunchScreen.storyboard */; };
+		8A9E04FB1D1BBB09004126FD /* ADWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E04FA1D1BBB09004126FD /* ADWaterFlowLayout.m */; };
+		8A9E05051D1BBB1B004126FD /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E05041D1BBB1B004126FD /* 1.plist */; };
+		8A9E050B1D1BBB78004126FD /* ADShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E05071D1BBB78004126FD /* ADShop.m */; };
+		8A9E050C1D1BBB78004126FD /* ADShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E05091D1BBB78004126FD /* ADShopCell.m */; };
+		8A9E050D1D1BBB78004126FD /* ADShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E050A1D1BBB78004126FD /* ADShopCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,14 @@
 		8A9E04ED1D1BB878004126FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A9E04F01D1BB878004126FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A9E04F21D1BB878004126FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9E04F91D1BBB09004126FD /* ADWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADWaterFlowLayout.h; sourceTree = "<group>"; };
+		8A9E04FA1D1BBB09004126FD /* ADWaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADWaterFlowLayout.m; sourceTree = "<group>"; };
+		8A9E05041D1BBB1B004126FD /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		8A9E05061D1BBB78004126FD /* ADShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADShop.h; sourceTree = "<group>"; };
+		8A9E05071D1BBB78004126FD /* ADShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADShop.m; sourceTree = "<group>"; };
+		8A9E05081D1BBB78004126FD /* ADShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADShopCell.h; sourceTree = "<group>"; };
+		8A9E05091D1BBB78004126FD /* ADShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADShopCell.m; sourceTree = "<group>"; };
+		8A9E050A1D1BBB78004126FD /* ADShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADShopCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +95,16 @@
 		8A9E04E01D1BB878004126FD /* ADWaterfallFlow */ = {
 			isa = PBXGroup;
 			children = (
+				8A9E04F81D1BBB09004126FD /* Interface */,
 				8A9E04E41D1BB878004126FD /* AppDelegate.h */,
 				8A9E04E51D1BB878004126FD /* AppDelegate.m */,
 				8A9E04E71D1BB878004126FD /* ViewController.h */,
 				8A9E04E81D1BB878004126FD /* ViewController.m */,
+				8A9E05061D1BBB78004126FD /* ADShop.h */,
+				8A9E05071D1BBB78004126FD /* ADShop.m */,
+				8A9E05081D1BBB78004126FD /* ADShopCell.h */,
+				8A9E05091D1BBB78004126FD /* ADShopCell.m */,
+				8A9E050A1D1BBB78004126FD /* ADShopCell.xib */,
 				8A9E04E11D1BB878004126FD /* Supporting Files */,
 			);
 			path = ADWaterfallFlow;
@@ -94,6 +113,7 @@
 		8A9E04E11D1BB878004126FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A9E05041D1BBB1B004126FD /* 1.plist */,
 				8A9E04EA1D1BB878004126FD /* Main.storyboard */,
 				8A9E04ED1D1BB878004126FD /* Assets.xcassets */,
 				8A9E04EF1D1BB878004126FD /* LaunchScreen.storyboard */,
@@ -101,6 +121,15 @@
 				8A9E04E21D1BB878004126FD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A9E04F81D1BBB09004126FD /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8A9E04F91D1BBB09004126FD /* ADWaterFlowLayout.h */,
+				8A9E04FA1D1BBB09004126FD /* ADWaterFlowLayout.m */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +193,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9E05051D1BBB1B004126FD /* 1.plist in Resources */,
+				8A9E050D1D1BBB78004126FD /* ADShopCell.xib in Resources */,
 				8A9E04F11D1BB878004126FD /* LaunchScreen.storyboard in Resources */,
 				8A9E04EE1D1BB878004126FD /* Assets.xcassets in Resources */,
 				8A9E04EC1D1BB878004126FD /* Main.storyboard in Resources */,
@@ -225,8 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9E050C1D1BBB78004126FD /* ADShopCell.m in Sources */,
+				8A9E04FB1D1BBB09004126FD /* ADWaterFlowLayout.m in Sources */,
 				8A9E04E91D1BB878004126FD /* ViewController.m in Sources */,
 				8A9E04E61D1BB878004126FD /* AppDelegate.m in Sources */,
+				8A9E050B1D1BBB78004126FD /* ADShop.m in Sources */,
 				8A9E04E31D1BB878004126FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
