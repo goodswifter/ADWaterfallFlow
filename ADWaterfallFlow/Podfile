@@ -1,0 +1,8 @@
+platform :ios, "8.0"
+use_frameworks!
+
+target 'ADWaterfallFlow' do
+    pod 'SDWebImage'
+    pod 'MJExtension'
+    pod 'MJRefresh'
+end
